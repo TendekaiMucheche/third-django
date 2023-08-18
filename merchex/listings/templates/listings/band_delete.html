@@ -1,12 +1,12 @@
 {% extends 'listings/base.html' %}
 
-
 {% block content %}
-    <p>We're here to help.</p>
+    <h1>Delete Band</h1>
+
+  <p>Are you sure you want to delete this band?: {{ band.name }}</p>
 
     <form action="" method="post">
     {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Submit">
+    <input type="submit" value="Delete">
     </form>
 {% endblock %}
